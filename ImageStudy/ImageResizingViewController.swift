@@ -26,7 +26,8 @@ class ImageResizingViewController: UIViewController {
         
         // 이미지 컨텍스트 사용
         imageView.image = resizingWithImageContext(image: targetImage, to: size)
-    
+        // 이미지 비트맵 사용
+        imageView.image = resizingWithBitmapContext(image: targetImage, to: size)
     }
 
 }
@@ -53,5 +54,29 @@ extension ImageResizingViewController{
 
 // bitmap resizing (2)
 extension ImageResizingViewController{
-    
+    func resizingWithBitmapContext(image : UIImage, to size : CGSize) -> UIImage?{
+        guard let cgImage = image.cgImage else{return nil}
+        
+        // 비트맵까지 알아가기엔 너무 어려우므로 이렇게 쓴다는 것만 알긔
+        let bpc = cgImage.bitsPerComponent
+        let bpr = cgImage.bytesPerRow
+        let colorSpace = cgImage.colorSpace!
+        let bitmapInfo = cgImage.bitmapInfo
+        
+        // 첫번째 파라미터는 nil을 전달하면 자동으로 처리
+        guard let context = CGContext(data: nil, width: Int(size.width), height: Int(size.height), bitsPerComponent: bpc, bytesPerRow: bpr, space: colorSpace, bitmapInfo: bitmapInfo.rawValue) else {return nil}
+        
+        // 이미지 품질저하를 최소화
+        context.interpolationQuality = .high
+        
+        let frame = CGRect(origin: CGPoint.zero, size: size)
+        context.draw(cgImage, in: frame)
+        
+        guard let resultImage = context.makeImage() else{
+            return nil
+        }
+        
+        return UIImage(cgImage: resultImage)
+        
+    }
 }
