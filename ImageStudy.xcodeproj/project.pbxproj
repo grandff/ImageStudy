@@ -13,6 +13,12 @@
 		1B9D8841240BC8C500A4DA24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9D883F240BC8C500A4DA24 /* Main.storyboard */; };
 		1B9D8843240BC8C800A4DA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9D8842240BC8C800A4DA24 /* Assets.xcassets */; };
 		1B9D8846240BC8C800A4DA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9D8844240BC8C800A4DA24 /* LaunchScreen.storyboard */; };
+		1B9D884E240BCB3B00A4DA24 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D884D240BCB3B00A4DA24 /* ImageViewController.swift */; };
+		1B9D8850240BCDF300A4DA24 /* ResizableImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D884F240BCDF300A4DA24 /* ResizableImageViewController.swift */; };
+		1B9D8852240BCF7B00A4DA24 /* PdfVectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D8851240BCF7B00A4DA24 /* PdfVectorViewController.swift */; };
+		1B9D8854240BD08F00A4DA24 /* RenderingModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D8853240BD08F00A4DA24 /* RenderingModeViewController.swift */; };
+		1B9D8856240BD20400A4DA24 /* CustomImageDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D8855240BD20400A4DA24 /* CustomImageDrawingViewController.swift */; };
+		1B9D8858240BD3EE00A4DA24 /* ImageResizingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D8857240BD3EE00A4DA24 /* ImageResizingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		1B9D8842240BC8C800A4DA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B9D8845240BC8C800A4DA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B9D8847240BC8C800A4DA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9D884D240BCB3B00A4DA24 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		1B9D884F240BCDF300A4DA24 /* ResizableImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableImageViewController.swift; sourceTree = "<group>"; };
+		1B9D8851240BCF7B00A4DA24 /* PdfVectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfVectorViewController.swift; sourceTree = "<group>"; };
+		1B9D8853240BD08F00A4DA24 /* RenderingModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderingModeViewController.swift; sourceTree = "<group>"; };
+		1B9D8855240BD20400A4DA24 /* CustomImageDrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageDrawingViewController.swift; sourceTree = "<group>"; };
+		1B9D8857240BD3EE00A4DA24 /* ImageResizingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,12 @@
 				1B9D8842240BC8C800A4DA24 /* Assets.xcassets */,
 				1B9D8844240BC8C800A4DA24 /* LaunchScreen.storyboard */,
 				1B9D8847240BC8C800A4DA24 /* Info.plist */,
+				1B9D884D240BCB3B00A4DA24 /* ImageViewController.swift */,
+				1B9D884F240BCDF300A4DA24 /* ResizableImageViewController.swift */,
+				1B9D8851240BCF7B00A4DA24 /* PdfVectorViewController.swift */,
+				1B9D8853240BD08F00A4DA24 /* RenderingModeViewController.swift */,
+				1B9D8855240BD20400A4DA24 /* CustomImageDrawingViewController.swift */,
+				1B9D8857240BD3EE00A4DA24 /* ImageResizingViewController.swift */,
 			);
 			path = ImageStudy;
 			sourceTree = "<group>";
@@ -140,7 +158,13 @@
 			files = (
 				1B9D883E240BC8C500A4DA24 /* ViewController.swift in Sources */,
 				1B9D883A240BC8C500A4DA24 /* AppDelegate.swift in Sources */,
+				1B9D8856240BD20400A4DA24 /* CustomImageDrawingViewController.swift in Sources */,
+				1B9D8852240BCF7B00A4DA24 /* PdfVectorViewController.swift in Sources */,
+				1B9D884E240BCB3B00A4DA24 /* ImageViewController.swift in Sources */,
+				1B9D8850240BCDF300A4DA24 /* ResizableImageViewController.swift in Sources */,
+				1B9D8858240BD3EE00A4DA24 /* ImageResizingViewController.swift in Sources */,
 				1B9D883C240BC8C500A4DA24 /* SceneDelegate.swift in Sources */,
+				1B9D8854240BD08F00A4DA24 /* RenderingModeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
